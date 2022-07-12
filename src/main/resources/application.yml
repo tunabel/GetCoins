@@ -15,3 +15,5 @@ coin.server:
 springdoc:
   swagger-ui:
     path: /getcoins.html
+server:
+  port: 8081
