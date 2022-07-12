@@ -1,0 +1,17 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  profiles:
+    active: dev
+coin.server:
+  api: https://api.coingecko.com/api/v3
+  ping: /ping
+  coins-list: /coins/list
+  coins-markets: /coins/markets
+  coins-id: /coins/{id}
+  supported-currencies: /simple/supported_vs_currencies
+springdoc:
+  swagger-ui:
+    path: /getcoins.html
